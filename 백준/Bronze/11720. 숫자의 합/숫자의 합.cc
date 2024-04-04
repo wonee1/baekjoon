@@ -16,6 +16,6 @@ int main(){
    sum+=s[i]-'0';//char형을 int 형으로 변환 
    }
   
-   cout<<sum;
+  cout<<sum;
    return 0; 
 }
