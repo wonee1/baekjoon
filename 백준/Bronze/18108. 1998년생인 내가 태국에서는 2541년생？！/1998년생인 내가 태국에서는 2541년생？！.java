@@ -1,13 +1,13 @@
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
-public class Main
-{
-	public static void main(String[] args) {
-		
-		Scanner in = new Scanner(System.in);
-		int y=in.nextInt();//불기연도 y 입력 
-		System.out.println(y-543);
-		
-
-	}
+public class Main{
+    
+    public static void main(String args[])throws IOException{
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s= br.readLine();
+        int y=Integer.parseInt(s);
+        System.out.println(y-543);
+    }
 }
