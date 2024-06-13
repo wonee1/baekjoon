@@ -1,14 +1,16 @@
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
+
 
 public class Main
 {
-	public static void main(String[] args) {
+	public static void main(String[] args)throws IOException {
+		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st= new StringTokenizer(br.readLine());
+		int H=Integer.parseInt(st.nextToken());
+		int M=Integer.parseInt(st.nextToken());
 		
-		Scanner in = new Scanner(System.in);
-		int H=in.nextInt();
-        int M=in.nextInt();
-        
-        if(M>44){
+		if(M>44){
             M-=45;
             System.out.printf("%d %d\n",H,M);
         }
@@ -24,6 +26,7 @@ public class Main
           System.out.printf("%d %d\n",H,M);
           
         }
-
+		
+		
 	}
 }
