@@ -10,12 +10,9 @@ public class Main {
         double max=0;
         double sum=0;
         
+      
         for(int i=0;i<N;i++){
-           A[i] = Integer.parseInt(input[i]); 
-        }
-        
-        
-        for(int i=0;i<N;i++){
+            A[i] = Integer.parseInt(input[i]); 
             if(max<A[i])max=A[i];
             sum+=A[i];
         }
